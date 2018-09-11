@@ -342,7 +342,7 @@ template {
 }
 
 body {
-  color: #1015172;
+  color: #101517;
 }
 
 p {
@@ -361,5 +361,37 @@ img {
 }
 
 .top-hero {
-  postion: relative;
+  position: relative;
 }
+
+.top-hero__text-content {
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+.top-hero__title {
+    font-size: 4.8rem;
+    color: #394a51;
+    margin: 0;
+
+  }
+
+.top-hero__subtitle {
+    font-size: 2.9rem;
+    color: #394a51;
+    margin: 0;
+  }
+
+.top-hero__paragraph {
+    color: #fefdfa;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 62.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }

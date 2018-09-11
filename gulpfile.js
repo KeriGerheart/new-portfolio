@@ -22,11 +22,11 @@ gulp.task('styles', function() {
 
 
 gulp.task('watch', function () {
-  watch('./site/index.html', function(){
+  watch('./site/index.html', function() {
     gulp.start('html');
   });
 
-  watch('./site/assets/styles/**.css', function() {
+  watch('./site/assets/styles/**/*.css', function() {
     gulp.start('styles');
   });
 });
