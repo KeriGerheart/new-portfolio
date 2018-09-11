@@ -1,0 +1,8 @@
+$mainDarkGrey: #1015172;
+
+body {
+  font-family:;
+  color: $mainDarkGrey;
+  margin: 10px;
+  columns: 300px 2;
+}
