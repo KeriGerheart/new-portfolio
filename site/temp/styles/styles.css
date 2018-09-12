@@ -384,6 +384,11 @@ a {
     display: block;
   }
 
+.top-hero__photo {
+    border-radius: 95px;
+    border: 10px solid rgba(255, 255, 255, .4);
+  }
+
 .top-hero__text-content {
     position: absolute;
     top:50%;

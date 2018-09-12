@@ -6,6 +6,11 @@
     display: block;
   }
 
+  &__photo {
+    border-radius: 95px;
+    border: 10px solid rgba(255, 255, 255, .4);
+  }
+
   &__text-content {
     position: absolute;
     top:50%;
