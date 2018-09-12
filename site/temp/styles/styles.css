@@ -370,7 +370,8 @@ img {
 
 a {
   color: #fdc57b;
-  
+  text-decoration: none;
+
 }
 
 .top-hero {
@@ -520,4 +521,16 @@ a {
     display: inline-block;
     list-style: none;
     color: #fdc57b;
+  }
+
+.work-item__title {
+    color: #fdc57b;
+    text-align: center;
+    font-weight: 400;
+  }
+
+.work-item__thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }

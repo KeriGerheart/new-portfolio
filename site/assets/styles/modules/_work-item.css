@@ -6,4 +6,16 @@
     list-style: none;
     color: $mainOrange;
   }
+
+  &__title {
+    color: $mainOrange;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
