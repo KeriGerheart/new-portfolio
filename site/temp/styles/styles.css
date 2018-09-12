@@ -488,9 +488,14 @@ a {
   }
 
 @media (min-width: 800px) {
+
     .row__medium-6 {
       float: left;
       width: 50%;
+    }
+
+    .row__b-margin-until-medium {
+      margin-bottom: 0;
     }
   }
 
@@ -502,8 +507,12 @@ a {
     margin-bottom: 1rem;
   }
 
-@media (min-width: 800px) {
-    .row__b-margin-until-medium {
-      margin-bottom: 0;
-    }
+.work-item {
+  padding-bottom: 2.5rem;
+}
+
+.work-item__list {
+    display: inline-block;
+    list-style: none;
+    color: #fdc57b;
   }

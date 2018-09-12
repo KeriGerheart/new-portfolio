@@ -1,0 +1,9 @@
+.work-item {
+  padding-bottom: 2.5rem;
+
+  &__list {
+    display: inline-block;
+    list-style: none;
+    color: $mainOrange;
+  }
+}
