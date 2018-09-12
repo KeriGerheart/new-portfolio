@@ -1,0 +1,13 @@
+.headline {
+  font-weight: 300;
+  color: $mainGreen;
+
+  &--centered {
+    text-align: center;
+
+  }
+
+  &--orange {
+    color: $mainOrange;
+  }
+}

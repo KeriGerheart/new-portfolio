@@ -343,10 +343,13 @@ template {
 
 body {
   color: #101517;
+  background-color: #fefdfa;
+
 }
 
 p {
   font-family: 'Anonymous Pro', monospace;
+
 
 }
 
@@ -358,11 +361,28 @@ h1, h2, h3 {
 img {
   max-width: 100%;
   height: auto;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #fdc57b;
+  
 }
 
 .top-hero {
   position: relative;
+  border-bottom: 10px solid #394a51;
+
+
 }
+
+.top-hero__image {
+    display: block;
+  }
 
 .top-hero__text-content {
     position: absolute;
@@ -375,23 +395,115 @@ img {
   }
 
 .top-hero__title {
-    font-size: 4.8rem;
+    font-size: 2.4rem;
     color: #394a51;
     margin: 0;
 
   }
 
+@media (min-width: 530px) {
+
+.top-hero__title {
+      font-size: 4.8rem
+
+  }
+  }
+
 .top-hero__subtitle {
-    font-size: 2.9rem;
+    font-size: 1.5rem;
     color: #394a51;
     margin: 0;
+  }
+
+@media (min-width: 530px) {
+
+.top-hero__subtitle {
+      font-size: 2.9rem
+  }
   }
 
 .top-hero__paragraph {
     color: #fefdfa;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
     max-width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+@media (min-width: 530px) {
+
+.top-hero__paragraph {
+      font-size: 1.5rem
+  }
+  }
+
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.page-section {
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 4.5rem 0
+}
+  }
+
+.page-section--blue {
+    background-color: #394a51;
+    color: #fefdfa;
+  }
+
+.headline {
+  font-weight: 300;
+  color: #7fa99b;
+}
+
+.headline--centered {
+    text-align: center;
+
+  }
+
+.headline--orange {
+    color: #fdc57b;
+  }
+
+.row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+.row--gutters {
+    margin-right: -65px;
+  }
+
+@media (min-width: 800px) {
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+.row__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 800px) {
+    .row__b-margin-until-medium {
+      margin-bottom: 0;
+    }
   }
