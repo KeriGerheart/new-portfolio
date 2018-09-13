@@ -534,3 +534,10 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
+
+.site-footer {
+  background-color: #394a51;
+  color: #fefdfa;
+  padding: .5rem 0;
+  text-align: center;
+}
