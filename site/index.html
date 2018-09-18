@@ -4,6 +4,7 @@
   <title>Keri Gerheart | Web Devloper</title>
   <meta name="description" content="Keri Gerheart, NYC based Web Devloper online portfolio">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <script src ="/temp/scripts/Vendor.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Poppins:400,500,600,700" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
@@ -11,7 +12,7 @@
 <header class="site-header">
   <div class="wrapper">
 
-    <div class="site-header__menu-icon">      
+    <div class="site-header__menu-icon">
       <div class="site-header__menu-icon__middle"></div>
     </div>
 
@@ -61,7 +62,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
   <div id="skills" class="page-section">
       <div class="wrapper">
         <h2 class="headline">Skills</h2>
-        <img src ="assets/images/graph-placeholder.jpg" alt="skills graph">
+        <img class="lazyload" data-src="assets/images/graph-placeholder.jpg" alt="skills graph">
 
         <p>The above is a sampling of some of techonology I used most often or am currently working on polishing my skills (say that better), but is not nearly exhaustive. I have a wide range of skills that include both front and back end development as well as SEO, website performance and optimization, SOMETHING ABOUT TOOLs?, and linux server administration.</p>
 
@@ -80,7 +81,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
       <div class="row row--gutters">
         <div class="row__medium-6">
           <div class="work-item">
-            <img class="work-item__thumbnail" src="assets/images/ASOB-thumb.png">
+            <img class="work-item__thumbnail lazyload" data-src="assets/images/ASOB-thumb.png">
             <h3 class="work-item__title">Name of Project</h3>
             <ul class="work-item__list">
               <li><i class="devicon-html5-plain-wordmark colored"></i></li>
@@ -91,13 +92,13 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
               <li><i class="devicon-apache-plain colored"></i></li>
             </ul>
             <p><strong>Project Type</strong>: Full WordPress site</p>
-            <a href="#">VIEW PROJECT</a>
+            <a href="#" class="open-modal">VIEW PROJECT</a>
         </div>
         </div>
 
         <div class="row__medium-6">
           <div class="work-item">
-           <img src ="assets/images/FT-thumb.png">
+           <img class="lazyload" data-src ="assets/images/FT-thumb.png">
               <h3>Name of Project</h3>
               <p>Just icons possibly??? Not sure yet . . .</p>
               <ul>
@@ -119,7 +120,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
     <div class="row row--gutters">
       <div class="row__medium-6">
         <div class="work-item">
-          <img src ="assets/images/MLT-thumb.png">
+          <img class="lazyload" data-src ="assets/images/MLT-thumb.png">
           <h3>Name of Project</h3>
           <p>Just icons possibly??? Not sure yet . . .</p>
           <ul>
@@ -136,7 +137,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
 
       <div class="row__medium-6">
         <div class="work-item">
-          <img src ="assets/images/Trave-thumb.png">
+          <img class="lazyload" data-src ="assets/images/Trave-thumb.png">
           <h3>Name of Project</h3>
           <p>Just icons possibly??? Not sure yet . . .</p>
           <ul>
@@ -155,7 +156,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
     <div class="row row--gutters">
       <div class= "row__medium-6">
         <div class="work-item">
-          <img src ="assets/images/THK-thumb.png">
+          <img class="lazyload" data-src="assets/images/THK-thumb.png">
           <h3>Name of Project</h3>
           <p>Just icons possibly??? Not sure yet . . .</p>
           <ul>
@@ -171,7 +172,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
 
       <div class= "row__medium-6">
         <div class="work-item">
-          <img src ="assets/images/ST-thumb.png">
+          <img class="lazyload" data-src ="assets/images/ST-thumb.png">
           <h3>Name of Project</h3>
           <p>Just icons possibly??? Not sure yet . . .</p>
           <li><i class="devicon-html5-plain-wordmark colored"></i></li>
@@ -198,6 +199,20 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
     <p>Copyright &copy; 2018 Keri. All rights reserved.</p>
   </div>
 </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2>Full Project View</h2>
+      <div class="wrapper">
+        <p class="modal__text">Here are the details of this prohect. It was super fun to make</p>
+        <img src="assets/images/test-for-modal.png">
+        <p class="modal__text">Here are the details of this prohect. It was super fun to make</p>
+      </div>
+      </div>
+      <div class="modal__close">X</div>
+  </div>
+
+
 <script src ="/temp/scripts/Site.js"></script>
 </body>
 </html>
