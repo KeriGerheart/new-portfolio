@@ -1,6 +1,8 @@
 .top-hero {
-  position: relative;
+  background: url('../../assets/images/blue-ocean-wave.jpg') top center no-repeat;
+  background-size: cover;
   border-bottom: 10px solid $mainBlue;
+
 
   &__image {
     display: block;
@@ -12,12 +14,8 @@
   }
 
   &__text-content {
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    left: 0;
+    padding-top: 5rem;
     text-align: center;
-    width: 100%;
   }
 
   &__title {

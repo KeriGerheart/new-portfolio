@@ -4,6 +4,7 @@
   <title>Keri Gerheart | Web Devloper</title>
   <meta name="description" content="Keri Gerheart, NYC based Web Devloper online portfolio">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="assets/styles/jquery.fancybox.css">
   <script src ="/temp/scripts/Vendor.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Poppins:400,500,600,700" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -42,7 +43,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
 
 
   <div class="top-hero">
-    <img class="top-hero__image" src="assets/images/blue-ocean-wave.jpg">
+  
     <div class="top-hero__text-content">
       <div class="wrapper">
         <h1 class="top-hero__title">Keri Gerheart</h1>
@@ -71,6 +72,18 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
         <p>I'm also a naturally curious person and believe that knowledge is power, so I'm always taking a class to working on a new skill, and lately that has been JS, specifically getting deeper into learning React and Nodejs.</p>
 
       </div>
+    </div>
+    <div id="test">
+      <a href="assets/images/graph-placeholder.jpg" data-fancybox="gallery" data-caption="Caption #1">
+click it
+</a>
+      <div class="lb-test-hidden" style="display: none;" id="hidden-content">
+	<h2>Hello</h2>
+	<p>You are awesome.</p>
+      </div>
+      <a data-fancybox data-src="#hidden-content" href="javascript:;">
+	Trigger the fancybox
+</a>
     </div>
 
   <div id="work" class="page-section page-section--blue">
@@ -200,19 +213,7 @@ I'm glad you're here :) Thanks for checking out my portfolio and taking a look u
   </div>
 </footer>
 
-  <div class="modal">
-    <div class="modal__inner">
-      <h2>Full Project View</h2>
-      <div class="wrapper">
-        <p class="modal__text">Here are the details of this prohect. It was super fun to make</p>
-        <img src="assets/images/test-for-modal.png">
-        <p class="modal__text">Here are the details of this prohect. It was super fun to make</p>
-      </div>
-      </div>
-      <div class="modal__close">X</div>
-  </div>
 
-
-<script src ="/temp/scripts/Site.js"></script>
+  <script src ="/temp/scripts/Site.js"></script>
 </body>
 </html>
