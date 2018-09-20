@@ -499,6 +499,7 @@ a {
 .top-hero__photo {
     border-radius: 95px;
     border: 10px solid rgba(255, 255, 255, .4);
+    margin: 3rem 0;
   }
 
 .top-hero__text-content {
@@ -509,14 +510,15 @@ a {
 .top-hero__title {
     font-size: 2.4rem;
     color: #394a51;
-    margin: 0;
+    margin: 2.5rem 0 0 0;
 
   }
 
 @media (min-width: 530px) {
 
 .top-hero__title {
-      font-size: 4.8rem
+      font-size: 4.8rem;
+      margin: 2rem 0 0 0
 
   }
   }

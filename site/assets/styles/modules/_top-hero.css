@@ -11,6 +11,7 @@
   &__photo {
     border-radius: 95px;
     border: 10px solid rgba(255, 255, 255, .4);
+    margin: 3rem 0;
   }
 
   &__text-content {
@@ -21,10 +22,11 @@
   &__title {
     font-size: 2.4rem;
     color: #394a51;
-    margin: 0;
+    margin: 2.5rem 0 0 0;
 
     @mixin atSmall {
       font-size: 4.8rem;
+      margin: 2rem 0 0 0;
     }
 
   }
