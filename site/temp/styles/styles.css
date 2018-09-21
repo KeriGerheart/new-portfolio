@@ -453,6 +453,7 @@ template {
 body {
   color: #101517;
   background-color: #fefdfa;
+  
 
 }
 
@@ -562,13 +563,18 @@ a {
 }
 
 .btn {
-  background-color: #fdc57b;
+  background-color: #ca9d62;
   color: #fff;
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+
 }
+
+.btn:hover {
+  cursor: pointer;
+  }
 
 .page-section {
   padding: 1.2rem 0;
@@ -862,8 +868,7 @@ a {
   }
 
 body.compensate-for-scrollbar {
-  overflow: hidden;
-  -ms-overflow-style: none; }
+  overflow: hidden; }
 
 .fancybox-active {
   height: auto; }
@@ -970,8 +975,8 @@ body.compensate-for-scrollbar {
 .fancybox-stage {
   direction: ltr;
   overflow: visible;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   z-index: 99994; }
 
 .fancybox-is-open .fancybox-stage {
@@ -979,7 +984,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-slide {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  /* Using without prefix would break IE11 */
   display: none;
   height: 100%;
   left: 0;
@@ -1016,10 +1021,8 @@ body.compensate-for-scrollbar {
   z-index: 99995; }
 
 .fancybox-slide--image {
+  overflow: hidden;
   padding: 44px 0 0 0; }
-
-.fancybox-slide--image {
-  overflow: visible; }
 
 .fancybox-slide--image::before {
   display: none; }
@@ -1043,7 +1046,6 @@ body.compensate-for-scrollbar {
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.14, 1);
   animation-timing-function: cubic-bezier(0.5, 0, 0.14, 1);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background: transparent;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1158,11 +1160,14 @@ body.compensate-for-scrollbar {
   background: rgba(30, 30, 30, 0.6);
   border: 0;
   border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: pointer;
   display: inline-block;
   height: 44px;
   margin: 0;
   padding: 10px;
+  position: relative;
   -webkit-transition: color .2s;
   transition: color .2s;
   vertical-align: top;
@@ -1209,6 +1214,25 @@ body.compensate-for-scrollbar {
 .fancybox-button--pause svg:nth-child(1),
 .fancybox-button--fsexit svg:nth-child(1) {
   display: none; }
+
+.fancybox-progress {
+  background: #ff5268;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  transition-property: -webkit-transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  z-index: 99998; }
 
 /* Close button on the top right corner of html content */
 
@@ -1311,37 +1335,31 @@ body.compensate-for-scrollbar {
 /* Loading indicator */
 
 .fancybox-loading {
-  -webkit-animation: fancybox-rotate .8s infinite linear;
-  animation: fancybox-rotate .8s infinite linear;
+  -webkit-animation: fancybox-rotate 1s linear infinite;
+  animation: fancybox-rotate 1s linear infinite;
   background: transparent;
-  border: 6px solid rgba(100, 100, 100, 0.5);
-  border-radius: 100%;
-  border-top-color: #fff;
-  height: 60px;
+  border: 4px solid #888;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  height: 50px;
   left: 50%;
-  margin: -30px 0 0 -30px;
-  opacity: .6;
+  margin: -25px 0 0 -25px;
+  opacity: .7;
   padding: 0;
   position: absolute;
   top: 50%;
-  width: 60px;
+  width: 50px;
   z-index: 99999; }
 
 @-webkit-keyframes fancybox-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 @keyframes fancybox-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 /* Transition effects */
 
@@ -1551,7 +1569,7 @@ body.compensate-for-scrollbar {
 /* Thumbs */
 
 .fancybox-thumbs {
-  background: #fff;
+  background: #ddd;
   bottom: 0;
   display: none;
   margin: 0;
@@ -1625,7 +1643,7 @@ body.compensate-for-scrollbar {
   width: 100px; }
 
 .fancybox-thumbs__list a::before {
-  border: 4px solid #4ea7f9;
+  border: 6px solid #ff5268;
   bottom: 0;
   content: '';
   left: 0;

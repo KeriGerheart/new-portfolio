@@ -1,8 +1,13 @@
 .btn {
-  background-color: $mainOrange;
+  background-color: #ca9d62;
   color: #fff;
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+
+&:hover {
+  cursor: pointer;
+  }
+
 }
