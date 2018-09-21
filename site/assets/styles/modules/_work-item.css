@@ -1,11 +1,23 @@
 .work-item {
   padding-bottom: 2.5rem;
+  text-align: center;
 
   &__list {
-    display: inline-block;
+    display: table;
     list-style: none;
-    color: $mainOrange;
+    color: $mainWhite;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    padding-left: 0;
+
   }
+
+  &__list li {
+    float: left;
+    padding-right: 10px;
+  }
+
 
   &__title {
     color: $mainOrange;
@@ -18,4 +30,5 @@
     margin-left: auto;
     margin-right: auto;
   }
+
 }

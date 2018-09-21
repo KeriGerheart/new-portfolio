@@ -485,7 +485,7 @@ a {
 }
 
 .top-hero {
-  background: url('../../assets/images/blue-ocean-wave.jpg') top center no-repeat;
+  background: url('../../assets/images/hero-bg.jpg') center no-repeat;
   background-size: cover;
   border-bottom: 10px solid #394a51;
 
@@ -539,7 +539,7 @@ a {
 .top-hero__paragraph {
     color: #fefdfa;
     font-size: 1.1rem;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
     max-width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -559,6 +559,15 @@ a {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+}
+
+.btn {
+  background-color: #fdc57b;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
 }
 
 .page-section {
@@ -623,12 +632,24 @@ a {
 
 .work-item {
   padding-bottom: 2.5rem;
+  text-align: center;
+
 }
 
 .work-item__list {
-    display: inline-block;
+    display: table;
     list-style: none;
-    color: #fdc57b;
+    color: #fefdfa;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    padding-left: 0;
+
+  }
+
+.work-item__list li {
+    float: left;
+    padding-right: 10px;
   }
 
 .work-item__title {
